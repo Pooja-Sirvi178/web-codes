@@ -20,7 +20,6 @@ body {
     height: 100vh;
 }
 
-
 /* container styling */
 .container {
     background-color: rgb(0, 181, 178);
@@ -116,6 +115,7 @@ button:not(#add,#sub,#mul,#div,#equal,#clear,#backspace) {
     background-color: #d84d16;
 }
 
+/* hover effect on butttons */
 button:hover:not(#add,#sub,#mul,#div,#equal,#clear,#backspace) {
     background-color: rgb(97, 46, 146);
     transition: 0.3s;
