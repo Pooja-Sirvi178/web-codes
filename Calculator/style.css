@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #FE7743;
+    --white: #EFEEEA;
+    --black: #000000;
+    --blue: #273F4F;
+    --light: #7AE2CF;
+}
+
+body {
+    background-color: rgb(226, 184, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* container styling */
+.container {
+    background-color: rgb(0, 181, 178);
+    height: 450px;
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 20px rgb(234, 116, 234);
+}
+
+/* display screen styling */
+.screen {
+    background-color: rgb(237, 217, 217);
+    height: 80px;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 0px 10px rgb(49, 113, 127);
+    border:1px solid rgb(195, 192, 192);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem;
+    overflow-y: hidden;
+    overflow-x: clip;
+    white-space: nowrap;
+    text-align: right;
+    border: 2px solid rgb(143, 146, 147);
+}
+
+/* button-pad styling */
+.btns-pad {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+/* button styling */
+button {
+    font-size: 1.75rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0.2px 0.2px 20px rgb(46, 134, 147);
+}
+
+/* give bg to operator */
+#add,#sub,#mul,#div {
+    background-color: var(--orange);
+    transition: 0.3s;
+}
+
+button:not(#add,#sub,#mul,#div,#equal,#clear,#backspace) {
+    background-color: rgb(146, 49, 238);
+    transition: 0.3s;
+}
+
+#equal {
+    width: 7.7rem;
+    background-color: rgb(0, 255, 0);
+    transition: 0.3s;
+}
+
+#backspace {
+    width: 7.7rem;
+    background-color: rgb(160, 169, 170);
+    transition: 0.3s;
+}
+
+#clear {
+    background-color: rgb(206, 12, 12);
+    color: white;
+    transition: 0.3s;
+}
+
+#equal:hover {
+    background-color: rgb(7, 178, 7);
+}
+
+#backspace:hover {
+    background-color: rgb(91, 93, 91);
+}
+
+#clear:hover {
+    background-color: rgb(162, 5, 5);
+}
+
+#add:hover,#sub:hover,#mul:hover,#div:hover {
+    background-color: #d84d16;
+}
+
+/* hover effect on butttons */
+button:hover:not(#add,#sub,#mul,#div,#equal,#clear,#backspace) {
+    background-color: rgb(97, 46, 146);
+    transition: 0.3s;
+} 
